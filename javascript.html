@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            Javascript
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var name = "Madhav Gupta";
+            var age = 20;
+            var message = "Hi, my name is " + name + " and I am " + age + " years old.";
+            
+            alert(message);
+            
+            var sum = 10 + 10;
+            console.log(sum);
+            
+            var myAccountBalance = 300;
+            var myPurchase = 450;
+            
+            if (myPurchase > myAccountBalance) {
+                console.log("Not enough balance.");
+            }
+            else {
+                console.log("It's all yours.");
+            }
+            
+            var val1 = 300;
+            var val2 = 250;
+            
+            if (val1 === val2) {
+                console.log("These values are the same.");
+            }
+            else {
+                console.log("These values are not the same.");
+            }
+            
+            if (val1 !== val2) {
+                console.log("These values are not the same.");
+            }
+            else {
+                console.log("These values are the same.");
+            }
+            
+            var array = [45, 33, 22, 36];
+            
+            for (var x = 0; x < array.length; x++) {
+                console.log(array[x]);
+            }
+            
+            var num5 = [];
+            num5.push(array[0]);
+            
+            console.log(array.indexOf(33));
+            console.log(num5[0]);
+            
+            function area(length, width) {
+                return length * width;
+            }
+            
+            var area1 = area(10, 15);
+            var area2 = area(20, 30);
+            console.log(area1);
+            console.log(area2);
+        </script>
+    </body>
+</html>

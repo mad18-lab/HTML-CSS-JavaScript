@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PRODUCT DIVIDE </title>
+</head>
+<body>
+<h3> MULTIPLE or DIVIDE: YOUR CHOICE </h3>
+<form>
+First Number: <input type="text" id="first" /> <br>
+Second Number: <input type="text" id="second" /> <br>
+<button type="button" onclick="multiply()"> Multiply </button>
+<button type="button" onclick="divide()"> Divide </button> <br>
+The Result Is:
+<p id="demo"> </p>
+</form>
+<script type="text/javascript">
+function multiply() {
+	var a = document.getElementById("first").value;
+	var b = document.getElementById("second").value;
+	var res = a * b;
+	document.getElementById("demo").innerHTML = res;
+}
+
+function divide() {
+	var a = document.getElementById("first").value;
+	var b = document.getElementById("second").value;
+	var res = a / b;
+	document.getElementById("demo").innerHTML = res;
+}
+</script>
+</body>
+</html>
